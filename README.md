@@ -25,7 +25,7 @@ cd fifa-wc-prediction
 
 # Install required dependencies
 pip install -r requirements.txt
-
+```
 ### Repository Structure
 
 The repository is organized into distinct functional directories for data, scripts, modeling, and output artifacts:
