@@ -1,4 +1,4 @@
-from pathlib import Path
+﻿from pathlib import Path
 import pickle
 
 import numpy as np
@@ -47,8 +47,8 @@ required = ["home_win_rate", "away_win_rate", "home_elo_rating", "away_elo_ratin
 df = df.dropna(subset=[col for col in required if col in df.columns])
 df["year"] = pd.to_numeric(df["year"], errors="coerce").fillna(df["date"].dt.year)
 
-train = df[df["year"] < 2022].copy()
-test = df[df["year"] >= 2022].copy()
+train = df[(df["year"] < 2025) & (df["year"] > 2022)].copy()
+test = df[df["year"] >= 2025 ].copy()
 
 if train.empty or test.empty or len(train) < len(df) * 0.5:
     df = df.sort_values("date")
@@ -58,6 +58,7 @@ if train.empty or test.empty or len(train) < len(df) * 0.5:
 
 X_train = numeric_feature_frame(train)
 y_train = train["target"].astype(int)
+
 X_test = numeric_feature_frame(test).reindex(columns=X_train.columns, fill_value=0)
 y_test = test["target"].astype(int)
 
@@ -101,6 +102,7 @@ xgb = XGBClassifier(
     random_state=42,
 )
 xgb.fit(X_train, y_train_xgb)
+
 xgb_preds_raw = xgb.predict(X_test)
 xgb_preds = pd.Series(xgb_preds_raw).map(REVERSE_MAP).astype(int).values
 
@@ -130,7 +132,9 @@ importances = pd.DataFrame({
     "feature": feature_cols,
     "rf_importance": rf.feature_importances_,
 }).sort_values("rf_importance", ascending=False)
+
 importances.to_csv(MODEL_DIR / "feature_importances.csv", index=False)
+importances.to_csv(BASE_DIR / "feature_importances.csv", index=False)
 
 print("\nModels saved to models folder")
 print(f"Feature columns saved: {len(feature_cols)}")

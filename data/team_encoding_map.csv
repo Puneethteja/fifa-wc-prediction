@@ -1,11 +1,11 @@
 team,team_encoded,group,group_encoded
 Algeria,0,J,9
 Argentina,1,J,9
-Australia,2,C,2
+Australia,2,D,3
 Austria,3,J,9
 Belgium,4,G,6
 Bosnia and Herzegovina,5,B,1
-Brazil,6,D,3
+Brazil,6,C,2
 Canada,7,B,1
 Cape Verde,8,H,7
 Colombia,9,K,10
@@ -19,23 +19,23 @@ England,16,L,11
 France,17,I,8
 Germany,18,E,4
 Ghana,19,L,11
-Haiti,20,D,3
+Haiti,20,C,2
 Iran,21,G,6
 Iraq,22,I,8
 Ivory Coast,23,E,4
 Japan,24,F,5
 Jordan,25,J,9
 Mexico,26,A,0
-Morocco,27,D,3
+Morocco,27,C,2
 Netherlands,28,F,5
 New Zealand,29,G,6
 Norway,30,I,8
 Panama,31,L,11
-Paraguay,32,C,2
+Paraguay,32,D,3
 Portugal,33,K,10
 Qatar,34,B,1
 Saudi Arabia,35,H,7
-Scotland,36,D,3
+Scotland,36,C,2
 Senegal,37,I,8
 South Africa,38,A,0
 South Korea,39,A,0
@@ -43,7 +43,7 @@ Spain,40,H,7
 Sweden,41,F,5
 Switzerland,42,B,1
 Tunisia,43,F,5
-Turkey,44,C,2
-United States,45,C,2
+Turkey,44,D,3
+United States,45,D,3
 Uruguay,46,H,7
 Uzbekistan,47,K,10
