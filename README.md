@@ -73,32 +73,32 @@ The simulator must be executed sequentially to parse the raw data into final tou
 Processes historical match data dating back to 1990 to calculate tournament-weighted summation ratings for all international teams.
 ```bash
 python scripts/02_fifa_sum_rating.py
-
+```
 #### Step 2: Build Team Features Matrix
 Aggregates historical matches, custom FIFA ratings, and Elo data to build an exhaustive performance profile for every participating World Cup team.
 ```bash
 python scripts/01_team_feature_engineering.py
-
+```
 #### Step 3: Compile Match Training Dataset
 Merges team-specific matrices into historical head-to-head records, creating delta/difference features (e.g., Elo differences, expected goal edges) for model training.
 ```bash
 python scripts/03_match_dataset_generation.py
-
+```
 #### Step 4: Train Machine Learning Models
 Trains, evaluates, and exports the Random Forest and XGBoost classifiers using a historical time-split.
 ```bash
 python modeling/train_model.py
-
+```
 #### Step 5: Predict Specific Fixtures
 Applies the saved model weights against the official 2026 World Cup group fixtures to output match-level Win-Draw-Loss probabilities.
 ```bash
 python modeling/predict_match.py
-
+```
 #### Step 6: Execute Tournament Simulation
 Runs 10,000 Monte Carlo simulated iterations utilizing a Poisson distribution of scores derived from the match prediction probabilities to output group outcomes and bracket placements.
 ```bash
 python simulation/monte_carlo_simulation.py
-
+```
 ### 📊 Core Data Pipeline Inputs & Outputs
 
 The following files act as the baseline communication layer between processing steps.
