@@ -1,4 +1,4 @@
-# fifa-wc-prediction
+
 # 🏆 2026 FIFA World Cup Predictive Simulator
 
 An end-to-end machine learning pipeline and Monte Carlo simulation engine built to engineer international football features, predict match-level outcomes, and simulate the entire 2026 FIFA World Cup group stage[cite: 1, 6].
