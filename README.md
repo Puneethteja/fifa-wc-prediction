@@ -25,12 +25,13 @@ cd fifa-wc-prediction
 
 # Install required dependencies
 pip install -r requirements.txt
-```
-### Repository Structure
+### 📂 Repository Structure
 
 The repository is organized into distinct functional directories for data, scripts, modeling, and output artifacts:
 
-├── data/                                      # Source data and generated pipeline features
+```text
+.
+├── data/                                    # Source data and generated pipeline features
 │   ├── elo_ratings.csv
 │   ├── eloratings.csv
 │   ├── fifa_sum_ratings.csv
@@ -42,24 +43,24 @@ The repository is organized into distinct functional directories for data, scrip
 │   ├── worldcup_2026_group_stage_probabilities.csv
 │   ├── worldcup2026_fixtures.csv
 │   └── worldcup2026_groups.csv
-├── docs/                                      # Documentation files
-├── modeling/                                  # Prediction and machine learning models
-│   ├── models/                                # Serialized model checkpoints
+├── docs/                                    # Documentation files
+├── modeling/                                # Prediction and machine learning models
+│   ├── models/                              # Serialized model checkpoints
 │   ├── predict_match.py
 │   └── train_model.py
-├── models/                                    # Alternate models checkpoint directory
-├── outputs/                                   # Target folder for simulation results
+├── models/                                  # Alternate models checkpoint directory
+├── outputs/                                 # Target folder for simulation results
 │   ├── predicted_group_stage_probabilities.csv
 │   ├── predicted_group_standings_decimal.csv
 │   ├── predicted_group_standings_integer.csv
 │   ├── predicted_group_standings.csv
 │   ├── round_of_32_fixtures.csv
 │   └── round_of_32_probabilities.csv
-├── scripts/                                   # Data prep and feature extraction scripts
+├── scripts/                                 # Data prep and feature extraction scripts
 │   ├── 01_team_feature_engineering.py
 │   ├── 02_fifa_sum_rating.py
 │   └── 03_match_dataset_generation.py
-├── simulation/                                # Tournament simulator script
+├── simulation/                              # Tournament simulator script
 │   └── monte_carlo_simulation.py
 ├── feature_importances.csv
 ├── README.md
