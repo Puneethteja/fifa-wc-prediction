@@ -25,6 +25,7 @@ cd fifa-wc-prediction
 
 # Install required dependencies
 pip install -r requirements.txt
+```
 ### 📂 Repository Structure
 
 The repository is organized into distinct functional directories for data, scripts, modeling, and output artifacts:
@@ -65,7 +66,7 @@ The repository is organized into distinct functional directories for data, scrip
 ├── feature_importances.csv
 ├── README.md
 └── requirements.txt
-
+```
 ### 🚀 Execution Pipeline
 
 The simulator must be executed sequentially to parse the raw data into final tournament probabilities.
