@@ -1,7 +1,7 @@
 
 # 🏆 2026 FIFA World Cup Predictive Simulator
 
-An end-to-end machine learning pipeline and Monte Carlo simulation engine built to engineer international football features, predict match-level outcomes, and simulate the entire 2026 FIFA World Cup group stage[cite: 1, 6].
+An end-to-end machine learning pipeline and Monte Carlo simulation engine built to engineer international football features, predict match-level outcomes, and simulate the entire 2026 FIFA World Cup group stage.
 
 ---
 
@@ -9,7 +9,7 @@ An end-to-end machine learning pipeline and Monte Carlo simulation engine built 
 
 * **Custom Rating Engines:** Computes tournament-weighted historical FIFA-style summation ratings and tracks Elo ratings dynamically across decades of international matches.
 * **Feature Engineering:** Extracts rolling team momentum matrices, including 5, 10, and 20-match form, attacking/defending metrics, clean sheet percentages, and neutral ground performance records.
-* **Ensemble Machine Learning:** Employs a blended predictive approach utilizing calibrated Random Forest and XGBoost classifiers to determine match results[cite: 1, 2].
+* **Ensemble Machine Learning:** Employs a blended predictive approach utilizing calibrated Random Forest and XGBoost classifiers to determine match results.
 * **Stochastic Simulation:** Runs 10,000 Monte Carlo iterations tracking group tables, tie-breakers, top third-place qualifiers, and generating bracket fixtures for the Round of 32.
 
 ---
@@ -20,7 +20,7 @@ Ensure you have Python installed. Clone this repository to your local environmen
 
 ```bash
 # Clone the repository
-git clone [https://github.com/dishas75/fifa-wc-prediction](https://github.com/dishas75/fifa-wc-prediction)
+git clone https://github.com/Puneethteja/fifa-wc-prediction
 cd fifa-wc-prediction
 
 # Install required dependencies
